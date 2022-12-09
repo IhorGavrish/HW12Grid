@@ -1,0 +1,480 @@
+@import url("https://fonts.googleapis.com/css2?family=Delius+Unicase&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Delius+Unicase&family=Roboto:wght@400;500&display=swap");
+.block_one {
+  width: 1170px;
+  height: 1295px;
+  margin: 120px auto 0;
+}
+.block_two {
+  width: 1170px;
+  height: 1695px;
+  margin: 120px auto 0;
+}
+.block_three {
+  width: 1170px;
+  height: 2095px;
+  margin: 120px auto 0;
+}
+.header_one {
+  width: 644px;
+  height: 45px;
+  margin: 0 auto;
+  font-weight: 400px;
+  font-size: 36px;
+  font-family: "Delius unicase";
+  line-height: 45.07px;
+  text-align: center;
+}
+.header_two {
+  width: 531px;
+  height: 45px;
+  margin: 0 auto;
+  font-weight: 400px;
+  font-size: 36px;
+  font-family: "Delius unicase";
+  line-height: 45.07px;
+  text-align: center;
+}
+.header_three {
+  width: 814px;
+  height: 45px;
+  margin: 0 auto;
+  font-weight: 400px;
+  font-size: 36px;
+  font-family: "Delius unicase";
+  line-height: 45.07px;
+  text-align: center;
+}
+
+/* Pозміщення колонок блоку один */
+.wrapper {
+  margin-top: 80px;
+  display: grid;
+  gap: 30px;
+  grid-template: repeat(3, 370px) / repeat(3, 370px);
+}
+.image2,
+.image3,
+.image6 {
+  grid-column-start: span 2;
+}
+/* Розміщення колонок блоку два */
+.wrapper_two {
+  margin-top: 80px;
+  display: grid;
+  gap: 30px;
+  grid-template: repeat(4, 370px) / repeat(3, 370px);
+}
+.image2_2,
+.image2_5 {
+  grid-column-start: span 2;
+}
+.image2_3 {
+  grid-column-start: span 2;
+  grid-row-start: span 2;
+}
+.image2_4 {
+  grid-row-start: span 2;
+}
+/* Розміщуємо колонки блоку трьи */
+.wrapper_three {
+  margin-top: 80px;
+  display: grid;
+  gap: 30px;
+  grid-template: repeat(5, 370px) / repeat(3, 370px);
+}
+.image3_2,
+.image3_5,
+.image3_6 {
+  grid-row-start: span 2;
+  background-color: aqua;
+}
+.image3_8,
+.image3_9 {
+  grid-column-start: span 2;
+  background-color: #241f24;
+}
+/* Нище оформлення  блоку з назвою міста і дати*/
+.text {
+  width: 370px;
+  height: 63px;
+  display: grid;
+  grid-template: repeat(1, auto) / repeat(2, auto);
+}
+.text_big {
+  width: 770px;
+  height: 63px;
+  display: grid;
+  grid-template: repeat(1, 1fr) / repeat(2, 1fr);
+}
+
+.city {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  color: #ffffff;
+  padding: 20px;
+  text-align: left;
+}
+.date {
+  font-family: "Roboto";
+  width: auto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: #e0e0e0;
+  padding: 20px;
+  text-align: right;
+}
+/* Oформлення блоку з лайкiв і скачанням*/
+.top {
+  display: flex;
+  justify-content: space-between;
+  width: 370px;
+  height: 307px;
+  opacity: 0;
+}
+.top:hover {
+  opacity: 1;
+}
+.top_big {
+  display: flex;
+  justify-content: space-between;
+  width: 770px;
+  height: 307px;
+  opacity: 0;
+}
+.top_big:hover {
+  opacity: 1;
+}
+.top_big_box {
+  display: flex;
+  justify-content: space-between;
+  width: 770px;
+  height: 707px;
+  opacity: 0;
+}
+.top_big_box:hover {
+  opacity: 1;
+}
+.top_vertical {
+  display: flex;
+  justify-content: space-between;
+  width: 370px;
+  height: 707px;
+  opacity: 0;
+}
+.top_vertical:hover {
+  opacity: 1;
+}
+
+.like {
+  margin: 20px;
+  opacity: 0.5;
+}
+.like:hover {
+  opacity: 1;
+}
+.save {
+  background-color: #e0e0e0;
+  border-radius: 8px;
+  margin: 20px;
+  opacity: 0.5;
+}
+.save:hover {
+  opacity: 1;
+}
+/* Нище оформлення картинок блоку один*/
+.image1 {
+  background: linear-gradient(
+      360deg,
+      #241f24 0%,
+      rgba(91, 91, 91, 0.447552) 34.11%,
+      rgba(187, 186, 192, 0.26) 62.5%
+    ),
+    url(./images/image_1.png);
+  border-radius: 20px;
+}
+.image1:hover {
+  background-image: url(./images/image_1.png);
+}
+.image2 {
+  background: linear-gradient(
+      360deg,
+      #241f24 0%,
+      rgba(91, 91, 91, 0.447552) 34.11%,
+      rgba(187, 186, 192, 0.26) 62.5%
+    ),
+    url(./images/image_2.png);
+  border-radius: 20px;
+}
+.image2:hover {
+  background-image: url(./images/image_2.png);
+}
+.image3 {
+  background: linear-gradient(
+      360deg,
+      #241f24 0%,
+      rgba(91, 91, 91, 0.447552) 34.11%,
+      rgba(187, 186, 192, 0.26) 62.5%
+    ),
+    url(./images/image_3.png);
+  border-radius: 20px;
+}
+.image3:hover {
+  background-image: url(./images/image_3.png);
+}
+.image4 {
+  background: linear-gradient(
+      360deg,
+      #241f24 0%,
+      rgba(91, 91, 91, 0.447552) 34.11%,
+      rgba(187, 186, 192, 0.26) 62.5%
+    ),
+    url(./images/image_4.png);
+  border-radius: 20px;
+}
+.image4:hover {
+  background-image: url(./images/image_4.png);
+}
+.image5 {
+  background: linear-gradient(
+      360deg,
+      #241f24 0%,
+      rgba(91, 91, 91, 0.447552) 34.11%,
+      rgba(187, 186, 192, 0.26) 62.5%
+    ),
+    url(./images/image_5.png);
+  border-radius: 20px;
+}
+.image5:hover {
+  background-image: url(./images/image_5.png);
+}
+.image6 {
+  background: linear-gradient(
+      360deg,
+      #241f24 0%,
+      rgba(91, 91, 91, 0.447552) 34.11%,
+      rgba(187, 186, 192, 0.26) 62.5%
+    ),
+    url(./images/image_6.png);
+  border-radius: 20px;
+}
+.image6:hover {
+  background-image: url(./images/image_6.png);
+}
+/* Нище оформлення картинок блоку два*/
+.image2_1 {
+  background: linear-gradient(
+      360deg,
+      #241f24 0%,
+      rgba(91, 91, 91, 0.447552) 34.11%,
+      rgba(187, 186, 192, 0.26) 62.5%
+    ),
+    url(./images/image_2_1.png);
+  border-radius: 20px;
+}
+.image2_1:hover {
+  background-image: url(./images/image_2_1.png);
+}
+.image2_2 {
+  background: linear-gradient(
+      360deg,
+      #241f24 0%,
+      rgba(91, 91, 91, 0.447552) 34.11%,
+      rgba(187, 186, 192, 0.26) 62.5%
+    ),
+    url(./images/image_2_2.png);
+  border-radius: 20px;
+}
+.image2_2:hover {
+  background-image: url(./images/image_2_2.png);
+}
+.image2_3 {
+  background: linear-gradient(
+      360deg,
+      #241f24 0%,
+      rgba(91, 91, 91, 0.447552) 34.11%,
+      rgba(187, 186, 192, 0.26) 62.5%
+    ),
+    url(./images/image_2_3.png);
+  border-radius: 20px;
+}
+.image2_3:hover {
+  background-image: url(./images/image_2_3.png);
+}
+.image2_4 {
+  background: linear-gradient(
+      360deg,
+      #241f24 0%,
+      rgba(91, 91, 91, 0.447552) 34.11%,
+      rgba(187, 186, 192, 0.26) 62.5%
+    ),
+    url(./images/image_2_4.png);
+  border-radius: 20px;
+}
+.image2_4:hover {
+  background-image: url(./images/image_2_4.png);
+}
+.image2_5 {
+  background: linear-gradient(
+      360deg,
+      #241f24 0%,
+      rgba(91, 91, 91, 0.447552) 34.11%,
+      rgba(187, 186, 192, 0.26) 62.5%
+    ),
+    url(./images/image_2_5.png);
+  border-radius: 20px;
+}
+.image2_5:hover {
+  background-image: url(./images/image_2_5.png);
+}
+.image2_6 {
+  background: linear-gradient(
+      360deg,
+      #241f24 0%,
+      rgba(91, 91, 91, 0.447552) 34.11%,
+      rgba(187, 186, 192, 0.26) 62.5%
+    ),
+    url(./images/image_2_6.png);
+  border-radius: 20px;
+}
+.image2_6:hover {
+  background-image: url(./images/image_2_6.png);
+}
+/* Оформлення картинок блоку три */
+.image3_1 {
+  background: linear-gradient(
+      360deg,
+      #241f24 0%,
+      rgba(91, 91, 91, 0.447552) 34.11%,
+      rgba(187, 186, 192, 0.26) 62.5%
+    ),
+    url(./images/image_3_1.png);
+  border-radius: 20px;
+}
+.image3_1:hover {
+  background-image: url(./images/image_3_1.png);
+}
+.image3_2 {
+  background: linear-gradient(
+      360deg,
+      #241f24 0%,
+      rgba(91, 91, 91, 0.447552) 34.11%,
+      rgba(187, 186, 192, 0.26) 62.5%
+    ),
+    url(./images/image_3_2.png);
+  border-radius: 20px;
+}
+.image3_2:hover {
+  background-image: url(./images/image_3_2.png);
+}
+.image3_3 {
+  background: linear-gradient(
+      360deg,
+      #241f24 0%,
+      rgba(91, 91, 91, 0.447552) 34.11%,
+      rgba(187, 186, 192, 0.26) 62.5%
+    ),
+    url(./images/image_3_3.png);
+  border-radius: 20px;
+}
+.image3_3:hover {
+  background-image: url(./images/image_3_3.png);
+}
+.image3_4 {
+  background: linear-gradient(
+      360deg,
+      #241f24 0%,
+      rgba(91, 91, 91, 0.447552) 34.11%,
+      rgba(187, 186, 192, 0.26) 62.5%
+    ),
+    url(./images/image_3_4.png);
+  border-radius: 20px;
+}
+.image3_4:hover {
+  background-image: url(./images/image_3_4.png);
+}
+.image3_5 {
+  background: linear-gradient(
+      360deg,
+      #241f24 0%,
+      rgba(91, 91, 91, 0.447552) 34.11%,
+      rgba(187, 186, 192, 0.26) 62.5%
+    ),
+    url(./images/image_3_5.png);
+  border-radius: 20px;
+}
+.image3_5:hover {
+  background-image: url(./images/image_3_5.png);
+}
+.image3_6 {
+  background: linear-gradient(
+      360deg,
+      #241f24 0%,
+      rgba(91, 91, 91, 0.447552) 34.11%,
+      rgba(187, 186, 192, 0.26) 62.5%
+    ),
+    url(./images/image_3_6.png);
+  border-radius: 20px;
+}
+.image3_6:hover {
+  background-image: url(./images/image_3_6.png);
+}
+
+.image3_7 {
+  background: linear-gradient(
+      360deg,
+      #241f24 0%,
+      rgba(91, 91, 91, 0.447552) 34.11%,
+      rgba(187, 186, 192, 0.26) 62.5%
+    ),
+    url(./images/image_3_7.png);
+  border-radius: 20px;
+}
+.image3_7:hover {
+  background-image: url(./images/image_3_7.png);
+}
+.image3_8 {
+  background: linear-gradient(
+      360deg,
+      #241f24 0%,
+      rgba(91, 91, 91, 0.447552) 34.11%,
+      rgba(187, 186, 192, 0.26) 62.5%
+    ),
+    url(./images/image_3_8.png);
+  border-radius: 20px;
+}
+.image3_8:hover {
+  background-image: url(./images/image_3_8.png);
+}
+.image3_9 {
+  background: linear-gradient(
+      360deg,
+      #241f24 0%,
+      rgba(91, 91, 91, 0.447552) 34.11%,
+      rgba(187, 186, 192, 0.26) 62.5%
+    ),
+    url(./images/image_3_9.png);
+  border-radius: 20px;
+}
+.image3_9:hover {
+  background-image: url(./images/image_3_9.png);
+}
+
+.image3_10 {
+  background: linear-gradient(
+      360deg,
+      #241f24 0%,
+      rgba(91, 91, 91, 0.447552) 34.11%,
+      rgba(187, 186, 192, 0.26) 62.5%
+    ),
+    url(./images/image_3_10.png);
+  border-radius: 20px;
+}
+.image3_10:hover {
+  background-image: url(./images/image_3_10.png);
+}
